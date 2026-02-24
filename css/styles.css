@@ -52,6 +52,10 @@ a {
 /* header */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 
+    0 1px 6px 0 rgba(46, 47, 66, 0.08), 
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -89,6 +93,7 @@ a {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative
 }
 
 .nav-link.active {
@@ -99,8 +104,8 @@ a {
   display: block;
   width: 100%;
   height: 4px;
-  position: relative;
-  top: 20px;
+  position: absolute;
+  bottom: -1px;
   background-color: #404bbf;
   border-radius: 2px;
 }
@@ -140,12 +145,15 @@ a {
   background-color: #2e2f42;
   background-image:
     linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/people-office\ 1.jpg');
+    url('../images/people-office.jpg');
   background-position: 50%;
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   height: 600px;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto
 }
 
 .hero-title {
@@ -201,7 +209,7 @@ a {
 
 .features-icon-wrapper {
   display: flex;
-  border: 2px solid #8e8f99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -256,12 +264,11 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+.team-wrapper{
+  padding: 32px 16px
+}
 .team-person {
   background-color: #ffffff;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
   border-radius: 0 0 4px 4px;
 }
 
@@ -286,9 +293,7 @@ a {
 .team-media-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
+  gap: 24px;
 }
 .team-social-link {
   display: flex;
@@ -325,6 +330,9 @@ a {
 .portfolio-item {
   max-width: 360px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-wrapper{
@@ -350,6 +358,13 @@ a {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover{
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item:hover .overlay{
