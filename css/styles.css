@@ -150,7 +150,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  height: 600px;
   padding: 188px 0;
   max-width: 1440px;
   margin: 0 auto
@@ -308,7 +307,9 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.team-icon{
+  fill: #f4f4fd;
+}
 .team-social-link:hover,
 .team-social-link:focus {
   border-color: #404bbf;
@@ -329,7 +330,6 @@ a {
 
 .portfolio-item {
   max-width: 360px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -429,6 +429,9 @@ a {
 .media-title {
   color: #ffffff;
   margin-bottom: 16px;
+  font-weight: 500; 
+  font-size: 16px; 
+  line-height: 1.5;
 }
 .media-list {
   display: flex;
